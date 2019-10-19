@@ -1,5 +1,5 @@
 
-## For now, this script will help you to build a debian system "buster" arm64 to a pre-formatted (at least 2 partitions)
+### For now, this script will help you to build a debian system "buster" arm64 to a pre-formatted (at least 2 partitions)
 # usb drive connected to your raspberry pi. The script will be updated as soon as possible to be easier and configurable.
 # Until I make it much more configurable, this script is targetting the RPI4 (as it's still not able to natively usb boot).
 ##

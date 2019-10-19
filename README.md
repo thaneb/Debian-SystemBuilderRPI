@@ -33,6 +33,6 @@ Your command prompt should then display "chmod +x buildbuster.sh", press enter a
 
 This will start to create the debian buster arm64 system on sda2 (the 2nd partition of your usb drive).
 
-When this part will ended, you will be already "chrooted" in your future system (let's say it's a you will be looged as root in your future system) you can check you are at this step easily, if the " ls " command show you the file named " buildcontinue.sh ", it seems everything ok !
+When this part will ended, you will be already "chrooted" in your future system (let's say you will be looged as root in your future system) you can check you are at this step easily, if the " ls " command show you the file named " buildcontinue.sh ", it seems everything ok !
 
 from here, just type in ./buildcontinue.sh and press enter

@@ -36,9 +36,12 @@ cat <<BBuster > buildbuster.sh
 echo 'Installing required packages'
 apt -y install arch-test debootstrap
 
+# Create mount point
+echo 'Create mount point'
+mkdir /mnt/debootstraparm64
+
 # Mounting partitions of the ONLY ONE EXTERNAL DRIVE CONNECTED (should be sda) and binding required folders for the chroot to come
 echo 'Mounting the external drive futur system partition (should be sda1) and binding required folders for the chroot to come'
-mkdir /mnt/debootstraparm64
 mount /dev/sda2 /mnt/debootstraparm64
 mkdir /mnt/debootstraparm64/boot
 mount /dev/mmcblk0p1 /mnt/debootstraparm64/boot
@@ -236,6 +239,10 @@ umount /mnt/debootstraparm64/dev/pts
 echo 'Unmounting the future drive partitions'
 umount -lf /mnt/debootstraparm64/dev
 umount -lf /mnt/debootstraparm64
+
+# Remove the mount point
+echo 'Remove the mount point'
+rm /mnt/debootstraparm64
 
 # Clean the script
 echo 'Clean the script'

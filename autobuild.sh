@@ -218,6 +218,7 @@ BC
 chmod +x /mnt/debootstraparm64/buildcontinue.sh
 
 # Go chroot
+echo 'We go chroot, please type in " ./buildcontinue.sh " and then press Enter'
 chroot /mnt/debootstraparm64
 
 # Clean the chroot install script

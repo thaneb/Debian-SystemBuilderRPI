@@ -223,5 +223,5 @@ rm buildbuster.sh
 #Everything finished ;-)
 echo 'Everything finished ;-) reboot to start your new debian arm64 system on usb drive'
 BBuster
-echo 'just press enter to the following command "chmod +x buildbuster.sh" '
-chmod +x buildbuster.sh
+echo 'just press enter to the following command "chmod +x buildbuster.sh" and then ". /buildbuster.sh"'
+chmod +x buildbuster.sh && ./buildbuster

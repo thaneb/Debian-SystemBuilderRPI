@@ -1,5 +1,5 @@
 
-## Help yourself, take 3 minutes to read the readme !!!
+## Help yourself, take 3 minutes to understand the readme !!!
  
 rm buildbuster.sh
 cat <<BBuster > buildbuster.sh

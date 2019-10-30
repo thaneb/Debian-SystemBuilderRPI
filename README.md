@@ -12,7 +12,7 @@ remove all partitions from the drive (UNDERSTAND = LOSING ALL DATA STORED ON IT)
 
 create 2 partitions on the drive (the formatting command order is essential for the script to work) :
 
-format the 1st (120 to 200mg) as fat32 or fat16 , it should identified by gparted as sda1 .
+format the 1st (120 to 256mg), 256mg if you wish to later use rpi-update, as fat32 or fat16 , it should identified by gparted as sda1 .
 
 THEN format the 2nd (at least 1Gb) as ext4 , it should identified by gparted as sda2 .
 

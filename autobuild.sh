@@ -51,10 +51,11 @@ echo "deb http://deb.debian.org/debian buster-updates main contrib non-free" >> 
 apt-get update
 
 # Install essentials packages
-echo 'Install essentials packages'
+echo 'Install essentials packages (including rpi-update)'
 apt -y install ca-certificates dbus sudo git unzip wget zip
 service dbus restart
-apt -y install wpasupplicant wireless-tools firmware-atheros firmware-brcm80211 firmware-misc-nonfree firmware-realtek dhcpcd5 net-tools curl
+apt -y install wpasupplicant wireless-tools firmware-atheros firmware-brcm80211 firmware-misc-nonfree firmware-realtek dhcpcd5 net-tools curl binutils
+curl -L --output /usr/bin/rpi-update https://raw.githubusercontent.com/Hexxeh/rpi-update/master/rpi-update && sudo chmod +x /usr/bin/rpi-update
 
 # Installing WiFi firmwares
 echo 'Installing WiFi firmwares'

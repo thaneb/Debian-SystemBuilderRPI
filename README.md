@@ -1,5 +1,5 @@
 Debian-SystemBuilderRPI for noobs or lazy users ^^
-
+Created for semi automated 64 bits debian install on raspberry pi 4 
 Script to (almost) auto build a debian system on a raspberry pi external drive
 
 For now, this script will help you to build a debian system "buster" arm64 to a pre-formatted (at least 2 partitions) usb drive connected to your raspberry pi. The script will be updated as soon as possible to be easier and configurable.
